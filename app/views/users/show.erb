@@ -1,0 +1,11 @@
+<h3>Hi, <%= @user.email %></h3>
+
+<button id="getCoords">Save Location</button>
+
+<div id="savedLocationsContainer">
+  <ul>
+   <% @user.addresses.each do |addr| %>
+     <li><%= addr.location %><li>
+   <%end%> 
+  </ul>
+</div>
